@@ -1,0 +1,9 @@
+#!/bin/bash
+
+pkill pipewire
+
+sleep 0.2
+
+pipewire > /dev/null & disown
+
+

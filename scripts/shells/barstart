@@ -1,0 +1,12 @@
+#!/bin/bash
+
+source /home/jasp/.config/fabric/venv/bin/activate
+
+pkill ax-shell
+
+python $HOME/.config/Ax-Shell/main.py > /dev/null & disown
+
+deactivate
+
+
+

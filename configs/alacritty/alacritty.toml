@@ -1,0 +1,26 @@
+[general]
+
+import = ["colors.toml"]
+
+live_config_reload = true
+
+[window]
+
+padding = {x = 3, y = 3}
+dynamic_padding = true
+
+opacity = 0.8
+
+blur = true
+
+
+[font]
+normal = { family = "Iosevka Nerd Font Mono", style = "Regular"}
+size = 13
+
+
+[bell]
+
+animation = "EaseOut"
+duration = 0
+

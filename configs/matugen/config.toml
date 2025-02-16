@@ -1,0 +1,24 @@
+[config]
+reload_apps = true
+
+[config.wallpaper]
+command = "swww"
+arguments = [ "img", "-t", "outer", "--transition-duration", "1.5", "--transition-step", "255", "--transition-fps", "60", "-f", "Nearest",]
+set = true
+
+[templates.hyprland]
+input_path = "~/.config/Ax-Shell/config/matugen/templates/hyprland-colors.conf"
+output_path = "~/.config/Ax-Shell/config/hypr/colors.conf"
+
+[templates.ax-shell]
+input_path = "~/.config/Ax-Shell/config/matugen/templates/ax-shell.css"
+output_path = "~/.config/Ax-Shell/styles/colors.css"
+post_hook = "fabric-cli exec ax-shell 'app.set_css()' &"
+
+[templates.alacritty]
+input_path = "~/.config/matugen/matugen-themes/templates/alacritty.toml"
+output_path = "~/.config/alacritty/colors.toml"
+
+[templates.kitty]
+input_path = '~/.config/matugen/matugen-themes/templates/kitty-colors.conf'
+output_path = '~/.config/kitty/colors.conf'

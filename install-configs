@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "COPYING FILES TO THEIR DESTINATION"
+
+$DEST_FOLDER="$HOME/.config"
+
+cp -r configs/ $DEST_FOLDER
+
+cp -r scripts $HOME
+
+echo "COMPLETED"
